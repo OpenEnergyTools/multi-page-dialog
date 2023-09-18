@@ -1,13 +1,13 @@
 {
-  "name": "oscd-dialog",
-  "description": "Webcomponent oscd-dialog following open-wc recommendations",
+  "name": "@openenergytools/multi-page-dialog",
+  "description": "Multi-page dialog based on mwc-dialog",
   "license": "Apache-2.0",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "main": "dist/oscd-dialog.js",
-  "module": "dist/oscd-dialog.js",
+  "main": "dist/multi-page-dialog.js",
+  "module": "dist/multi-page-dialog.js",
   "exports": {
-    ".": "./dist/oscd-dialog.js"
+    ".": "./dist/multi-page-dialog.js"
   },
   "scripts": {
     "analyze": "cem analyze",

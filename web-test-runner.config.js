@@ -1,4 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { visualRegressionPlugin } from '@web/test-runner-visual-regression/plugin';
+
 import { playwrightLauncher } from '@web/test-runner-playwright';
 
 import pixelmatch from 'pixelmatch';
@@ -10,7 +12,7 @@ const local = !process.env.CI;
 console.assert(local, 'Running in CI!');
 console.assert(!fuzzy, 'Running on OS with 1% test pixel diff threshold!');
 
-const thresholdPercentage = fuzzy && local ? 0 : 0;
+const thresholdPercentage = fuzzy && local ? 1 : 0;
 
 const filteredLogs = [
   'Running in dev mode',
